@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onChanged(List<Note> notes)
             {
-                Toast.makeText(MainActivity.this, "onChanged: " + notes.size(),
-                        Toast.LENGTH_SHORT).show();
                 noteAdapter.submitList(notes);
             }
         });
